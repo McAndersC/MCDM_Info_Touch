@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.btn {
+
+    background-color: red;
+    padding : 80px 120px;
+    border-radius: 100px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    font-size: 80px;
+
+}
+
+.active {
+    background-color: green;
+}
+
+.hidden {
+   opacity: 0;
+   height: 0;
+   position: absolute;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
