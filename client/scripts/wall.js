@@ -6,8 +6,11 @@ const renderImages = async () => {
     const wallContainer = document.querySelector('.wall');
     const response = await fetch(`${serverPath}/images/dontclick`).then(response => response.json());
     wallContainer.innerHTML = '';
+
     response.forEach((image) => {
-      wallContainer.innerHTML += `<img src="${serverPath}/dontclick/${image.image}.png" alt="image" width="180px"/>`;
+
+        wallContainer.innerHTML += `<img src="${serverPath}/dontclick/${image.image}.png" alt="image" width="180px"/>`;
+
     });
 
 };
